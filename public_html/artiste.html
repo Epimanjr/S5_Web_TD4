@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Artiste (TD4)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="artiste.css" />
+    </head>
+    
+    <body>
+        <header>
+            Réalisé par Maxime BLAISE, L3 - MIAGE.
+        </header>
+        <!-- Boîte générique de type bloc pour l'exercice 2 -->
+        <div>
+            <h1>
+                Division de l'exercice 2 (avec XML): 
+            </h1>
+            <!-- Formulaire demandée, contenant un champ de saisie et un bouton -->
+            <form>
+                <!-- Champ de saisie -->
+                <label>Entrer le nom d'un artiste : </label>
+                <input type="text" name="saisie" id="textfield" />
+     
+                <!-- Bouton valider -->
+                <input type="button" name="afficher" value="Afficher" onclick="loadXMLDoc()" />
+            </form>
+        </div>
+        
+        <!-- Boîte générique de type bloc pour l'exercice 2 -->
+        <div>
+            <h1>
+                Division de l'exercice 3 (avec JSON): 
+            </h1>
+            <!-- Formulaire demandée, contenant un champ de saisie et un bouton -->
+            <form>
+                <!-- Champ de saisie -->
+                <label>Entrer le nom d'un artiste : </label>
+                <input type="text" name="saisie" id="textfield2" />
+     
+                <!-- Bouton valider -->
+                <input type="button" name="afficher" value="Afficher" onclick="loadJSONDoc()" />
+            </form>
+        </div>
+        
+        <div>
+            <hr>
+            <p id="affichage">
+                En attente ...
+            </p>
+        </div>
+        
+        <!-- Insertion du code javascript -->
+        <script type="text/javascript" src="artiste.js"></script>
+    </body>
+</html>
